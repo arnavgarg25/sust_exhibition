@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css'; // Optional for styling
+import axios from 'axios'
+import {v4 as uuid} from 'uuid'
 
 const suppliers = [
   { name: 'Supreme Mouldings', img: '/supreme.jpg', info: 
@@ -22,7 +24,27 @@ function App() {
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [rating, setRating] = useState(0);
-
+  const handlesubmit = async() => {
+    
+    const url = 'https://ubrwxe2ud1.execute-api.eu-west-1.amazonaws.com/dev/execution';
+    const headers = {
+      'Content-Type': 'application/json',
+    };
+    const data = {
+      uniqueID: uuid(),
+      name: name,
+      comment: comment,
+      rating: rating.toString(),
+    };
+  
+    try {
+      const response = await axios.post(url, data, { headers });
+      console.log('Response:', response.data);
+    } catch (error) {
+      console.error('Error:', error.response ? error.response.data : error.message);
+    }
+  };
+  
   return (
     <div style={{ 
       backgroundColor: '#f0faff', // Light blue
@@ -144,6 +166,7 @@ function App() {
             setName('');
             setComment('');
             setRating(0);
+            handlesubmit()
           }}
         >
           Submit
