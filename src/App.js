@@ -4,10 +4,7 @@ import axios from 'axios'
 import {v4 as uuid} from 'uuid'
 
 const suppliers = [
-  { name: 'Supreme Mouldings', img: '/supreme.jpg', info: 
-    'Description: Delivering premium-quality products made from 100% recycled polystyrene'
-   },
-
+  { name: 'Supreme Mouldings', img: '/supreme.jpg', info: 'Description: Delivering premium-quality products made from 100% recycled polystyrene', link: 'https://suprememouldings.co.za/?srsltid=AfmBOorCAiz8uE118ApRq_GspVEj6-ycfhsQUi0UosaEdMSEwwuL81aT'},
   { name: 'Tmhabela Trading', img: '/trading.jpg', info: 'Description: Beautiful furniture all from BMW Plant Rosslyn pallets' },
   { name: 'CSIR', img: '/csir.jpg', info: 'Description: Touching Lives through Innovation' },
   { name: 'Bluedust', img: '/bluedust.jpg', info: 'Description: Engineering solutions from water treatment to energy management' },
@@ -17,6 +14,7 @@ const suppliers = [
   { name: 'eWASA', img: '/ewasa.jpg', info: 'Description: Expert in Waste Management' },
   { name: 'Beka-Schreder', img: '/beka.jpg', info: 'Description: Offer intelligent and sustainable lighting' },
   { name: 'SunArc', img: '/sunarc.jpg', info: 'Description: Market-leading Renewable Energy Company (Solar independent Power Producer)' },
+  { name: 'Grundfos', img: '/grundfos.png', info: 'Description: Since pioneering energy-efficient water and digital solutions is our business, we’re committed to reducing our global footprint by saving our own energy and water, while also enabling a greener supply chain.' },
 ];
 
 function App() {
