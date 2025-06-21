@@ -70,6 +70,12 @@ const suppliers = [
     info: 'Description: Since pioneering energy-efficient water and digital solutions is our business, we’re committed to reducing our global footprint by saving our own energy and water, while also enabling a greener supply chain.',
     link: 'https://www.grundfos.com/za'
   },
+  {
+    name: 'Oricol',
+    img: '/oricol.jpg',
+    info: 'Description: At Oricol Environmental Services, we’re constantly developing new and innovative ways of turning waste into a resource',
+    link: 'https://www.oricoles.co.za/'
+  },
 ];
 
 function App() {
