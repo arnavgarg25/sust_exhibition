@@ -78,7 +78,7 @@ const suppliers = [
   },
   {
     name: 'TopTurf',
-    img: '/topturf.png',
+    img: '/topturf.jpg',
     info: 'Description: Bidvest Top Turf is a multi-disciplinary Greens Services company providing quality horticultural, specialized turf and recreational solutions to our client’s needs.',
     link: 'https://topturf.co.za/'
   },
